@@ -136,7 +136,7 @@ class ToDoMVC {
             this.editingText = (e.target as HTMLInputElement).value
           })
           .onBlur(() => this.doneEditing(id))
-          .do(el => {
+          .element(el => {
             setTimeout(() => el.focus())
           })
       }
