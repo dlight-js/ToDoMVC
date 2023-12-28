@@ -16,6 +16,7 @@ import {
   span,
   strong,
   a,
+  p,
 } from "@dlightjs/types"
 
 interface ToDo {
@@ -181,6 +182,24 @@ class ToDoMVC {
     }
   }
 
+  @View
+  Info() {
+    footer().class("info")
+    {
+      p("Double-click to edit a todo")
+      p()
+      {
+        "Written by "
+        a("Yihan Duan").href("https://github.com/IanDxSSXX")
+      }
+      p()
+      {
+        "Part of "
+        a("TodoMVC").href("http://todomvc.com")
+      }
+    }
+  }
+
   View() {
     section().class("todoapp")
     {
@@ -213,6 +232,7 @@ class ToDoMVC {
         this.Footer()
       }
     }
+    this.Info()
   }
 }
 
