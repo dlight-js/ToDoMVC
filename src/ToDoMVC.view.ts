@@ -68,7 +68,6 @@ class ToDoMVC {
           completed: false,
         },
       ]
-      console.log(this.todos)
       ;(target as HTMLInputElement).value = ""
     }
   }
