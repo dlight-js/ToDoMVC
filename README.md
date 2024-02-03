@@ -1,2 +1,2 @@
 # ToDo MVC in DLight.js
-https://todomvc.dlight-js.com
+https://todomvc.dlight.dev
